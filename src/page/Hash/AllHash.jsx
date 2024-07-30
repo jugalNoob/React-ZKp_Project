@@ -60,3 +60,84 @@ function AllHash() {
 }
 
 export { form , hash , profile , Login, AllHash}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+import sha256 from 'crypto-js/sha256';
+
+function form() {
+
+        const id = 3424545;
+        let rand = Math.floor(Math.random() * id);
+        const value = `/chat/${rand}`;
+        const hash = sha256(value);
+        let hashes = hash.toString();
+        let val = `/chat/${hashes}`;
+        
+  return val;
+
+
+}
+
+export { form };
+
+
+//   const ids = 3424545;
+//   let rand = Math.floor(Math.random() * ids);
+//   console.log(rand , 'rand')
+//   const hash = sha256(rand.toString());
+//   // console.log(hash , 'hash')
+//   let hashes = hash.toString();
+//   console.log(hashes , 'hashes')
+
+
+
+
+// console.log(form())
+
+// setInterval(()=>{
+
+//     const ids = 3424545;
+//     let rand = Math.floor(Math.random() * ids);
+//     console.log(rand , 'rand')
+//     const hash = sha256(rand.toString());
+//     // console.log(hash , 'hash')
+//     let hashes = hash.toString();
+//     console.log(hashes , 'hashes')
+
+
+
+//     // const ids = 3424545;
+//     // // console.log(ids)
+//     // let  rand=Math.floor(Math.random()*ids)
+//     // console.log(rand)
+//     // const hash = sha256(rand);
+//     // // console.log(hash)
+//     // let hashes = hash.toString();
+//     // console.log(hashes)
+// } , 4000)
+
+
+// const id = 3424545;
+
+// const hash = sha256(id);
+// console.log(hash)
+// let hashes = hash.toString();
+// console.log(hashes)
+
+
+
+
+//   console.log(form()); // Ensure that the function is being called correctly
