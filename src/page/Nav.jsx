@@ -1,12 +1,11 @@
 
-import React,{useEffect , useState} from 'react'
-import { Link,useNavigate } from 'react-router-dom'
-import "./style/nav.css"
+import React, { useEffect, useState } from 'react';
+import { Link, useNavigate } from 'react-router-dom';
+import "./style/nav.css";
 
 
-import { form, hash , profile , Login} from "./Hash/AllHash"
-import sha256 from 'crypto-js/sha256';
 import Cookies from 'js-cookie';
+import { form, hash, Login, profile } from "./Hash/AllHash";
 function Nav() {
     const Fucks = () => {
         if (document.getElementById("myname").style.width === "256px") {
@@ -63,6 +62,7 @@ menu
 <div className="siders" id="myname">
 
 <Link to="/">home</Link>
+
 
             {isLoggedIn ? (
               <>

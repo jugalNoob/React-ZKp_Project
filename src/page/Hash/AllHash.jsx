@@ -1,5 +1,5 @@
-import React from 'react'
 import sha256 from 'crypto-js/sha256';
+import React from 'react';
 function form() {
   //Param Your nav Form//
   const id=3424545;
@@ -59,7 +59,7 @@ function AllHash() {
   )
 }
 
-export { form , hash , profile , Login, AllHash}
+export { AllHash, Login, form, hash, profile };
 
 
 
@@ -75,23 +75,23 @@ export { form , hash , profile , Login, AllHash}
 
 
 
-import sha256 from 'crypto-js/sha256';
+// import sha256 from 'crypto-js/sha256';
 
-function form() {
+// function form() {
 
-        const id = 3424545;
-        let rand = Math.floor(Math.random() * id);
-        const value = `/chat/${rand}`;
-        const hash = sha256(value);
-        let hashes = hash.toString();
-        let val = `/chat/${hashes}`;
+//         const id = 3424545;
+//         let rand = Math.floor(Math.random() * id);
+//         const value = `/chat/${rand}`;
+//         const hash = sha256(value);
+//         let hashes = hash.toString();
+//         let val = `/chat/${hashes}`;
         
-  return val;
+//   return val;
 
 
-}
+// }
 
-export { form };
+// export { form };
 
 
 //   const ids = 3424545;
